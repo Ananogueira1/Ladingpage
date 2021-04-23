@@ -6,25 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
+    <script src="https://kit.fontawesome.com/ce4513a7d0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css/style.css">
 </head>
 
 <body>
     <header>
         <div class="container container_header">
-            <nav class="nav_header">
+            <nav id="links" class="nav_header">
                 <a href="#inicio">ínicio</a>
                 <a href="#contaier_sobre">sobre</a>
                 <a href="#desafios">desafios</a>
                 <a href="#endereco">endereço</a>
+                <a href="" onclick="botaoDomenu">
+                    <i class="fas fa-times"></i>
+                </a>
             </nav>
+            <a class="btn_menu" href="#" onclick="botaoDomenu()">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
     </header>
 
     <main>
         <section id="inicio" class="container_banner"></section>
         <img class="fundo_banner" src="assets_/imagem-fundo-banner.png" alt="">
-        <div class="box_couteudo_banner">
+        <div class="box_conteudo_banner">
             <h1> desenvolvimento de sistemas 2021</h1>
             <hr color="#FFAF00">
             <span>senai informatica</span>
@@ -36,7 +43,7 @@
             <div class="container container_conteudo">
                 <h2>sobre os projetos</h2>
                 <div class="box_sobre">
-                    <img src="assets_/imagem-seção-sobre.png" alt="">
+                    <img class="img_box_sobre" src="assets_/imagem-seção-sobre.png" alt="">
                     <div class="box_participantes">
                         <span>participantes</span>
                         <h3>mais de 80 alunos organizados em 16 grupos</h3>
@@ -55,41 +62,54 @@
 
         <section id="desafios" class="info">
             <div class="container container_info">
-            <div>
-              <h2>local</h2>
-              <div class="box_span">
-                  <span>são paulo</span>
-              </div>
+                <div>
+                    <h2>local</h2>
+                    <div class="box_span">
+                        <span>são paulo</span>
+                    </div>
+                </div>
+                <div>
+                    <h2>duração</h2>
+                    <div class="box_span">
+                        <span>90 dias</span>
+                    </div>
+                </div>
+                <div>
+                    <h2>desafios</h2>
+                    <div class="box_span">
+                        <span>+30 desafios</span>
+                    </div>
+                </div>
             </div>
-            <div>
-              <h2>duração</h2>
-              <div class="box_span">
-                  <span>90 dias</span>
-              </div>
-            </div>
-            <div>
-              <h2>desafios</h2>
-              <div class="box_span">
-                  <span>+30 desafios</span>
-              </div>
-            </div>
-        </div>
         </section>
-        
+
         <section id="endereco" class="endereco">
             <h2>endereço:</h2>
             <div class="box_endereco">
-                <p>Alameda Barão de Limeira, 539 
+                <p>Alameda Barão de Limeira, 539
                     Santa Cecilia, São Paulo - SP
                     CEP: 01202-001</p>
-                </div>
-                <img class="img_mapa" src="assets_/mapa.png" alt="">
+            </div>
+            <img class="img_mapa" src="assets_/mapa.png" alt="">
         </section>
     </main>
 
     <footer>
         <span>Copyright © 2020 - Escola Senai de Informática</span>
     </footer>
+
+    <script>
+        function botaoDomenu() {
+            var menu = document.getElementById("links")
+            if (menu.style.display === "flex") {
+                //esconder o menu
+                menu.style.display = "none";
+            } else {
+                // mostrar o menu
+                menu.style.display = "flex";
+            }
+        }
+    </script>
 </body>
 
 </html>
