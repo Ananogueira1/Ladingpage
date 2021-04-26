@@ -49,6 +49,10 @@ header{
     font-size: 18px;
 }
 
+.x{
+    display: none;
+}
+
 /*main*/
 
 main{ 
@@ -100,7 +104,9 @@ hr{
 .contaier_sobre{
     background-color: #080324;
     height: 800px;
+    margin-top: -4px;
 }
+
 
 .container_conteudo{
     display: flex;
@@ -196,7 +202,6 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
 }
 
 .endereco h2{
@@ -229,8 +234,8 @@ hr{
 
 .img_mapa{
     position: absolute;
-    top: 95px;
-    right: 302px;
+    top: 1924px;
+    right: 283px;
 }
 
 footer{
@@ -283,6 +288,10 @@ footer span{
     .btn_menu i {
         color: white;
         font-size: 30px;
+    }
+
+    .x{
+        display: block;
     }
 
     .container_banner{
@@ -370,43 +379,45 @@ footer span{
          align-items: center;
      }
 
+     .container_info{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 600px;
+    }
+    
+    .endereco{
+        height: 800px;
+        justify-content: space-evenly;
+    }
+    
+    .endereco h2{
+    
+    }
+    
+    .box_endereco{
+        width: 80vw;
+        height: unset;
+        padding: 60px 40px;
+    }
+    
+    .endereco p{
+        margin-left: 0;
+    }
+    .img_mapa{
+        position: unset;
+        width: 80vw;
+        margin-bottom: 45px;
+    }   
+    
+    footer span{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
-.container_info{
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 600px;
-}
 
-.endereco{
-    height: 800px;
-    justify-content: space-evenly;
-}
-
-.endereco h2{
-
-}
-
-.box_endereco{
-    width: 80vw;
-    height: unset;
-    padding: 60px 40px;
-}
-
-.endereco p{
-    margin-left: 0;
-}
-.img_mapa{
-    position: unset;
-    width: 80vw;
-    margin-bottom: 45px;
-}   
-
-footer span{
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
